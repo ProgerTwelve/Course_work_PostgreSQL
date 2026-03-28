@@ -1,8 +1,10 @@
 Vacancy Hunter — Поиск вакансий с hh.ru
+
 Проект для автоматического сбора данных о компаниях и вакансиях с сайта hh.ru и анализа через PostgreSQL.
 
 Описание
-Приложение получает данные о 10+ компаниях и их вакансиях через публичное API hh.ru, сохраняет их в базу данных PostgreSQL и предоставляет удобный интерфейс для анализа:
+Приложение получает данные о 10+ компаниях и их вакансиях через публичное API hh.ru, сохраняет их в базу данных 
+PostgreSQL и предоставляет удобный интерфейс для анализа:
 
 Количество вакансий у каждой компании
 Список всех вакансий с зарплатами
@@ -18,8 +20,8 @@ tabulate — отображение данных в ввиде таблицы
 python-dotenv — управление переменными окружения
 Установка и запуск
 Клонируйте репозиторий:
-git clone <git@github.com:mossssolma-ui/project3_job_search_with_db_connection.git>
-cd project3_job_search_with_db_connection
+git clone <git@github.com/ProgerTwelve/Course_work_PostgreSQL.git>
+cd Course_work_PostgreSQL
 Установите зависимости через Poetry:
 poetry install
 Настройте переменные окружения:
@@ -31,9 +33,8 @@ poetry install
 Запустите приложение:
 python main.py
 Структура проекта
-project3_job_search_with_db_connection/
-├── src/
-├   └── project3_job_search_with_db_connection/
+Course_work_PostgreSQL/
+├── src
 ├       ├── __init__.py     
 ├       ├── hh_api.py       # Работа с API hh.ru
 ├       ├── utils.py        # Вспомогательные функции 
@@ -41,7 +42,6 @@ project3_job_search_with_db_connection/
 ├        
 ├── main.py                 # Точка входа, интерфейс пользователя
 ├── pyproject.toml          # Зависимости и метаданные (Poetry)
-├── poetry.toml             # Виртуальное окружение в проекте 
 ├── poetry.lock             # Фиксация версий зависимостей
 ├── .env.template           # Шаблон для .env
 ├── .flake8
